@@ -1,8 +1,8 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
@@ -10,16 +10,15 @@ const projects = [
     description:
       "Le système de gestion de bibliothèque est une application web développée pour gérer les opérations de la bibliothèque, y compris l'authentification, l'autorisation et les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer). Ce projet vise à fournir un moyen fluide et efficace de gérer les ressources de la bibliothèque et d'améliorer l'expérience utilisateur.",
     image: "/Library.png",
-    github: "https://github.com"
+    github: "https://github.com/"
   },
   {
     name: "Crud-Operation-Node.js",
     description: "Ce code représente un ensemble de fonctions de contrôleur qui gèrent les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des réservations d'hébergement. Ces fonctions sont construites à l'aide du framework Express.js et utilisent le package express-validator pour la validation des entrées.",
     image: "/website2.png",
-    github: "https://github.com",
+    github: "https://github.com/",
   }
-]
-
+];
 
 const ProjectsSection = () => {
   return (
@@ -58,13 +57,11 @@ const ProjectsSection = () => {
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer text-teal-500"
                         />
-                      </Link>
-                      <Link href={`/projects/${idx}`}>
-                        <a className="flex items-center text-teal-500 hover:text-teal-600">
-                          Voir plus
-                          <BsArrowUpRightSquare className="ml-1" />
-                        </a>
-                      </Link>
+                      </Link>                        
+                      <span className="flex items-center text-teal-500">
+                        Voir plus
+                        <BsArrowUpRightSquare className="ml-1" />
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -76,6 +73,5 @@ const ProjectsSection = () => {
     </section>
   );
 };
-
 
 export default ProjectsSection;
