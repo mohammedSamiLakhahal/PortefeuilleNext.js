@@ -23,17 +23,17 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" className="bg-gray-100 py-16">
-      <div className="container mx-auto">
-        <h1 className="text-center font-bold text-4xl mb-8 text-gray-800">
+      <div className="container-fluid mx-auto">
+        <h1 className="text-center font-bold text-4xl mb-8 text-purple-900">
           Projets
         </h1>
-        <hr className="w-6 h-1 mx-auto mb-8 bg-teal-500 border-0 rounded" />
+        <hr className="w-6 h-1 mx-auto mb-8 bg-purple-600 border-0 rounded" />
 
         <div className="grid gap-10 md:grid-cols-2">
           {projects.map((project, idx) => {
             return (
               <SlideUp key={idx} offset="-300px 0px -300px 0px">
-                <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row md:space-x-8">
+                <div className="bg-white rounded-lg shadow-lg p-6 space-y-4 md:space-y-0 md:flex items-center">
                   <div className="md:w-1/2">
                     <Image
                       src={project.image}
@@ -43,25 +43,27 @@ const ProjectsSection = () => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="mt-4 md:w-1/2">
-                    <h1 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">
+                  <div className="md:w-1/2">
+                    <h1 className="text-xl md:text-2xl font-bold mb-4 text-purple-900">
                       {project.name}
                     </h1>
-                    <p className="text-base md:text-lg leading-7 mb-6 text-gray-600">
+                    <p className="text-base md:text-lg leading-7 text-gray-600">
                       {project.description}
                     </p>
 
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex items-center space-x-4">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer text-teal-500"
+                          className="hover:-translate-y-1 transition-transform cursor-pointer text-purple-500"
                         />
                       </Link>                        
-                      <span className="flex items-center text-teal-500">
-                        Voir plus
-                        <BsArrowUpRightSquare className="ml-1" />
-                      </span>
+                      <Link href={project.github} target="_blank" passHref>
+                        <a className="flex items-center text-purple-500 hover:text-purple-600">
+                          Voir plus
+                          <BsArrowUpRightSquare className="ml-1" />
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

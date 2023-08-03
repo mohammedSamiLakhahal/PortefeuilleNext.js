@@ -41,11 +41,10 @@ const ContactSection = () => {
   if (!isClient) {
     return null;
   }
-
   return (
-    <section id="contact" className="bg-blue-100 py-10 mt-2">
+    <section id="contact" className="bg-purple-100 py-10 mt-2">
       <div className="container mx-auto px-4">
-        <h1 className="text-center font-bold text-4xl mb-8">Contactez-moi</h1>
+        <h1 className="text-center font-bold text-4xl mb-8 text-purple-600">Contactez-moi</h1>
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">Informations de contact</h2>
@@ -66,7 +65,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-lg py-2 px-4 text-gray-700 focus:outline-none focus:border-blue-500"
+                  className="w-full border rounded-lg py-2 px-4 text-gray-700 focus:outline-none focus:border-purple-500"
                 />
               </div>
               <div className="mb-4">
@@ -78,7 +77,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-lg py-2 px-4 text-gray-700 focus:outline-none focus:border-blue-500"
+                  className="w-full border rounded-lg py-2 px-4 text-gray-700 focus:outline-none focus:border-purple-500"
                 />
               </div>
               <div className="mb-4">
@@ -89,10 +88,10 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-lg py-4 px-4 text-gray-700 focus:outline-none focus:border-blue-500"
+                  className="w-full border rounded-lg py-4 px-4 text-gray-700 focus:outline-none focus:border-purple-500"
                 />
               </div>
-              <button type="submit" className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600">Envoyer</button>
+              <button type="submit" className="bg-purple-500 text-white py-2 px-6 rounded-lg hover:bg-purple-600">Envoyer</button>
             </form>
           </div>
         </div>
