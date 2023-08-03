@@ -10,13 +10,13 @@ const projects = [
     description:
       "Le système de gestion de bibliothèque est une application web développée pour gérer les opérations de la bibliothèque, y compris l'authentification, l'autorisation et les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer). Ce projet vise à fournir un moyen fluide et efficace de gérer les ressources de la bibliothèque et d'améliorer l'expérience utilisateur.",
     image: "/Library.png",
-    github: "https://github.com/"
+    github: "https://github.com/mohammedSamiLakhahal/Library"
   },
   {
     name: "Crud-Operation-Node.js",
     description: "Ce code représente un ensemble de fonctions de contrôleur qui gèrent les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des réservations d'hébergement. Ces fonctions sont construites à l'aide du framework Express.js et utilisent le package express-validator pour la validation des entrées.",
     image: "/website2.png",
-    github: "https://github.com/",
+    github: "https://github.com/mohammedSamiLakhahal/Crud-Operation-Node.js",
   }
 ];
 
